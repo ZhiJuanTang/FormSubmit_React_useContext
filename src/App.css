@@ -27,6 +27,22 @@ ul {
   padding: 0;
 }
 
+h1 {
+  font-size: 2rem;
+  line-height: 1.38;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.36;
+}
+
+p,
+h3 {
+  font-size: 1.125rem;
+  line-height: 1.56;
+}
+
 .container-content {
   max-width: 1200px;
   margin: 0 auto;

@@ -12,19 +12,19 @@ const About = () => {
           <div className='figure'>
             <h3>Welcome to Europe’s largest call center database</h3>
             <div className='conainer-figure'>
-              <div className='item'>
+              <div>
                 <h1>500+</h1>
                 <p>Tenders</p>
               </div>
-              <div className='item'>
+              <div>
                 <h1>200+</h1>
                 <p>Callcenter</p>
               </div>
-              <div className='item'>
+              <div>
                 <h1>375.000</h1>
                 <p>Agents available</p>
               </div>
-              <div className='item'>
+              <div>
                 <h1>85%</h1>
                 <p>Faster sourcing</p>
               </div>
