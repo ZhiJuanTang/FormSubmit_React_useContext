@@ -1,0 +1,26 @@
+.header {
+  padding: 1.063rem 0;
+  background-color: white;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.56rem;
+}
+
+.logo {
+  width: 10.125rem;
+  height: auto;
+  object-fit: contain;
+}
+
+nav {
+  width: 60%;
+  color: var(--text-color-light);
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
