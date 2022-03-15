@@ -1,0 +1,17 @@
+.how-it-works {
+  background: white;
+  color: var(--text-color-dark);
+  margin: 0.625rem 0;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3.3%;
+  padding: 1.875rem 0;
+}
+
+.item img {
+  width: auto;
+  height: 5rem;
+}
