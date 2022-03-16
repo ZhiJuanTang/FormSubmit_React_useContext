@@ -1,4 +1,5 @@
 import AboutForm from './AboutForm';
+import DisplayData from './DisplayData';
 import { useFormContext } from '../context/FormContext';
 
 import './About.css';
@@ -9,7 +10,7 @@ const About = () => {
   return (
     <section className='about'>
       <div className='container-content'>
-        <div className='about-form-container'>{!formData && <AboutForm />}</div>
+        <div className='about-form-container'>{formData ? <DisplayData /> : <AboutForm />}</div>
         <div className='figure'>
           <h3>Welcome to Europe’s largest call center database</h3>
           <div className='conainer-figure'>
