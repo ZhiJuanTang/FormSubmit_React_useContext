@@ -5,19 +5,22 @@ import WhySnubes from './components/WhySnubes';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
 import Copywrite from './components/Copywrite';
+import FormState from './context/FormContext';
 
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <About />
-      <HowItWorks />
-      <WhySnubes />
-      <Partners />
-      <Footer />
-      <Copywrite />
+      <FormState>
+        <Header />
+        <About />
+        <HowItWorks />
+        <WhySnubes />
+        <Partners />
+        <Footer />
+        <Copywrite />
+      </FormState>
     </div>
   );
 }
