@@ -5,6 +5,7 @@
 .about .container-content {
   display: grid;
   grid-template-columns: 53.3% 1fr;
+  align-items: flex-end;
   padding-top: 1.25rem;
   padding-bottom: 1.563rem;
 }

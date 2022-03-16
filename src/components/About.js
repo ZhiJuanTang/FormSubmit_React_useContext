@@ -1,3 +1,5 @@
+import Form from './Form';
+
 import './About.css';
 
 const About = () => {
@@ -7,6 +9,7 @@ const About = () => {
         <div className='about-form'>
           <h2>Find inbound call centers for your company</h2>
           <p>Use our AI and Big Data driven call center sourcing solution</p>
+          <Form />
         </div>
         <div className='figure'>
           <h3>Welcome to Europe’s largest call center database</h3>
