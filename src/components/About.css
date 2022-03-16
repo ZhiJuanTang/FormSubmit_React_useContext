@@ -3,9 +3,8 @@
 }
 
 .about .container-content {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 53.3% 1fr;
   padding-top: 1.25rem;
   padding-bottom: 1.563rem;
 }
@@ -15,12 +14,12 @@
   background-color: white;
   padding: 1.563rem 2.188rem;
   border-radius: 8px;
+  margin: 0 0.813rem;
 }
 
 .figure {
   color: white;
-  margin-left: 2.318rem;
-  width: 46.3%;
+  margin-left: 1.5rem;
 }
 
 .figure h3 {

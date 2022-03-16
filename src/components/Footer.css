@@ -1,0 +1,39 @@
+footer {
+  background-color: var(--background-color-dark);
+  color: white;
+  padding: 4rem 0;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: start;
+  margin: 0 2.813rem;
+}
+
+.reward {
+  height: 5.313rem;
+  width: 5.313rem;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.reward img {
+  max-width: 100%;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-item li {
+  font-size: 1.063rem;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.footer-item span {
+  margin-right: 1.25rem;
+}

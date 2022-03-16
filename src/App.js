@@ -3,6 +3,7 @@ import About from './components/About';
 import HowItWorks from './components/HowItWorks';
 import WhySnubes from './components/WhySnubes';
 import Partners from './components/Partners';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
       <HowItWorks />
       <WhySnubes />
       <Partners />
+      <Footer />
     </div>
   );
 }
