@@ -1,0 +1,21 @@
+.display-data {
+  padding: 3.25rem 4.188rem;
+}
+
+.display-data-header p {
+  margin-top: 1.536rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid var(--placeholder-color);
+}
+
+.display-data-body-container {
+  display: flex;
+  margin: 0.938rem 3.813rem 0 3.813rem;
+  text-align: start;
+}
+
+.container-label p,
+.container-data h3 {
+  margin-right: 3rem;
+  margin-top: 1.25rem;
+}
