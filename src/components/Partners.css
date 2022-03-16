@@ -1,0 +1,42 @@
+.partners {
+  background-color: white;
+  margin-bottom: 1.25rem;
+  color: var(--text-color-dark);
+}
+
+.quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+.nav-key {
+  width: 3rem;
+  height: auto;
+}
+
+.quote blockquote {
+  width: 41.25rem;
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.56;
+}
+
+.author {
+  font-style: normal;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  margin: 1.875rem auto;
+}
+
+.partners-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners-logo img {
+  height: 2.25rem;
+  width: auto;
+}
