@@ -10,7 +10,7 @@ const FormState = ({ children }) => {
     setFormData(data);
   };
 
-  return <FormContext.Provider value={{ getInformed }}>{children}</FormContext.Provider>;
+  return <FormContext.Provider value={{ getInformed, formData }}>{children}</FormContext.Provider>;
 };
 
 export default FormState;
