@@ -10,10 +10,9 @@
   padding-bottom: 1.563rem;
 }
 
-.about-form {
+.about-form-container {
   color: var(--text-color-dark);
   background-color: white;
-  padding: 1.563rem 2.188rem;
   border-radius: 8px;
   margin: 0 0.813rem;
 }

@@ -10,7 +10,7 @@ const Form = () => {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors, isSubmitSuccessful },
   } = useForm();
 
   const onSubmit = (data) => {
