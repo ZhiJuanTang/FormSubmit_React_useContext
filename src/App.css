@@ -1,7 +1,8 @@
 :root {
   --text-color-dark: #445566;
   --text-color-light: #7f7f7f;
-  --background-color: #f9f9f9;
+  --background-color-light: #f9f9f9;
+  --background-color-dark: #4a4a4a;
 }
 
 * {
@@ -15,7 +16,7 @@
   text-align: center;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: var(--background-color);
+  background: var(--background-color-light);
 }
 
 a {
