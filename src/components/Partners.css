@@ -2,6 +2,7 @@
   background-color: white;
   margin-bottom: 1.25rem;
   color: var(--text-color-dark);
+  padding: 3.75rem 0;
 }
 
 .quote {
@@ -34,6 +35,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3.75rem;
 }
 
 .partners-logo img {

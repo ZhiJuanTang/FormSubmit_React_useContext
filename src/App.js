@@ -4,6 +4,7 @@ import HowItWorks from './components/HowItWorks';
 import WhySnubes from './components/WhySnubes';
 import Partners from './components/Partners';
 import Footer from './components/Footer';
+import Copywrite from './components/Copywrite';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
       <WhySnubes />
       <Partners />
       <Footer />
+      <Copywrite />
     </div>
   );
 }
