@@ -4,14 +4,14 @@
   margin: 0.625rem 0;
 }
 
-.container-grid {
+.how-it-works .container-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3.3%;
   padding: 1.875rem 0;
 }
 
-.item img {
+.how-it-works .container-content img {
   width: auto;
   height: 5rem;
 }

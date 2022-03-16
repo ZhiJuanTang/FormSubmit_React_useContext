@@ -2,7 +2,7 @@
   background: url('../assets/background-1.jpg');
 }
 
-.container-about {
+.about .container-content {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
