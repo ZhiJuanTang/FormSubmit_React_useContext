@@ -3,7 +3,7 @@ import './DisplayData.css';
 
 const DisplayData = () => {
   const {
-    formData: { company, email, isd, name, phone },
+    formData: { company, email, name, phone },
   } = useFormContext();
   return (
     <div className='display-data'>

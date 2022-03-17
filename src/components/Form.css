@@ -6,31 +6,74 @@
   margin-top: 0.624rem;
 }
 
-.form-item input {
+.form-item {
+  margin-top: 0.938rem;
+}
+
+.form-item input,
+.react-input select {
   font-size: 1.125rem;
   font-family: inherit;
   color: inherit;
   line-height: inherit;
   border: 1px solid var(--placeholder-color);
-  margin-top: 0.938rem;
   margin-left: 0.938rem;
   border-radius: 4px;
   width: 22.5rem;
   padding: 0.625rem;
 }
 
-.phone-input-group {
-  width: 23.438rem;
-  display: inline-flex;
+.form-item input:focus,
+.react-input select:focus {
+  outline-color: var(--button-color-primary);
 }
 
-#isd {
+.phone-input-group {
+  display: inline-flex;
+  align-items: center;
+}
+
+.react-input {
+  margin-left: 0.938rem;
+  width: 22.5rem;
+  align-items: center;
+}
+
+/* react-phone-input component*/
+
+.PhoneInput {
+  display: flex;
+}
+
+.PhoneInputCountry {
+  display: flex;
+  align-items: center;
+  position: relative;
   width: 25%;
 }
 
-.form-item input:focus {
-  outline-color: var(--button-color-primary);
+.PhoneInput select {
+  position: absolute;
+  width: 100%;
+  margin-left: 0;
 }
+
+.PhoneInput input {
+  width: 85%;
+}
+
+.PhoneInputCountryIcon {
+  width: 70%;
+  padding-left: 20%;
+  align-self: center;
+  z-index: 10;
+}
+
+.PhoneInputCountryIconImg {
+  display: block;
+}
+
+/* button */
 
 .get-informed-button {
   text-align: center;
