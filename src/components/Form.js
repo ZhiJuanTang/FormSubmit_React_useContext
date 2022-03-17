@@ -1,15 +1,33 @@
+import { useEffect, useState } from 'react';
 import { useFormContext } from '../context/FormContext';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
+import PhoneInput from 'react-phone-number-input';
+import axios from 'axios';
 
 import './Form.css';
 
 const Form = () => {
+  const [defaultCountry, setDefaultCountry] = useState();
   const { getInformed } = useFormContext();
+
+  useEffect(() => {
+    const getCountry = async () => {
+      try {
+        const {
+          data: { country_code },
+        } = await axios.get('http://ipwhois.app/json/');
+        setDefaultCountry(country_code);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    getCountry();
+  }, []);
 
   const {
     register,
     handleSubmit,
-    watch,
+    control,
     formState: { errors, isSubmitSuccessful },
   } = useForm();
 
@@ -43,19 +61,16 @@ const Form = () => {
         ></input>
       </div>
       <div className='form-item'>
-        <label htmlFor='phone'>Phone</label>
-        <span className='phone-input-group'>
-          <input type='number' id='isd' placeholder='DE' {...register('isd', { required: true })}></input>
-          <input
-            type='text'
-            id='phone'
-            placeholder='+49'
-            {...register('phone', {
-              required: 'Phone number is required',
-              pattern: { value: /^[0-9]*$/, message: 'Phone number must only contain numbers' },
-            })}
-          ></input>
-        </span>
+        <div className='phone-input-group'>
+          <label htmlFor='phone'>Phone</label>
+          <div className='react-input'>
+            <Controller
+              name='phone'
+              control={control}
+              render={({ field }) => <PhoneInput defaultCountry={defaultCountry} international {...field} />}
+            />
+          </div>
+        </div>
       </div>
       <div className='form-item'>
         <label htmlFor='email'>E-mail</label>
