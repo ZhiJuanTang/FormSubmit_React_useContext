@@ -5,11 +5,11 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer'>
       <div className='container-content'>
         <div className='container-footer'>
           <div className='reward'>
-            <img src={reward} />
+            <img src={reward} alt='Sign of Innovationspreis-IT Inter Service 2018' />
           </div>
           <ul className='footer-item'>
             <li>About us</li>

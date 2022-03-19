@@ -1,11 +1,14 @@
 .about {
-  background: url('../assets/background-1.jpg');
+  background: linear-gradient(to bottom, rgba(68, 85, 102, 0), rgba(68, 85, 102, 0.75)), url('../assets/background-1.jpg') no-repeat;
+  background-size: cover;
 }
 
 .about .container-content {
-  display: grid;
-  grid-template-columns: 53.3% 1fr;
+  display: flex;
+  justify-content: center;
   align-items: flex-end;
+  gap: 2.7rem;
+  flex-wrap: wrap;
   padding-top: 1.25rem;
   padding-bottom: 1.563rem;
 }
@@ -14,12 +17,11 @@
   color: var(--text-color-dark);
   background-color: white;
   border-radius: 8px;
-  margin: 0 0.813rem;
+  margin-left: 0.813rem;
 }
 
 .figure {
   color: white;
-  margin-left: 1.5rem;
 }
 
 .figure h3 {
@@ -30,4 +32,11 @@
 .conainer-figure {
   display: flex;
   justify-content: space-between;
+  gap: 2.64rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    background: none;
+  }
 }

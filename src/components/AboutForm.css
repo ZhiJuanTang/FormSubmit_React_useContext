@@ -1,3 +1,7 @@
 .about-form {
   padding: 1.563rem 2.188rem;
 }
+
+.about-form p {
+  margin: 0.625rem 0 1.562rem 0;
+}
