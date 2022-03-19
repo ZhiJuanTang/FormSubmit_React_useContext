@@ -41,6 +41,7 @@ const Form = () => {
       <div className='form-item'>
         <label htmlFor='company'>Company</label>
         <input
+          className='form-item-input'
           type='text'
           id='company'
           placeholder='Company'
@@ -54,27 +55,32 @@ const Form = () => {
       <div className='form-item'>
         <label htmlFor='name'>Name</label>
         <input
+          className='form-item-input'
           type='text'
           id='name'
           placeholder='Full name'
           {...register('name', { required: 'Name is required', maxLength: { value: 50, message: 'Name cannot exceed 50 characters' } })}
         ></input>
       </div>
-      <div className='form-item'>
-        <div className='phone-input-group'>
-          <label htmlFor='phone'>Phone</label>
-          <div className='react-input'>
-            <Controller
-              name='phone'
-              control={control}
-              render={({ field }) => <PhoneInput defaultCountry={defaultCountry} international {...field} />}
-            />
-          </div>
+      <div className='form-item-react-input'>
+        <label htmlFor='phone'>Phone</label>
+        <div className='react-input'>
+          <Controller
+            name='phone'
+            control={control}
+            render={({ field }) => <PhoneInput defaultCountry={defaultCountry} international {...field} />}
+          />
         </div>
       </div>
       <div className='form-item'>
         <label htmlFor='email'>E-mail</label>
-        <input type='email' id='email' placeholder='name@mail.com' {...register('email', { required: 'email is required' })}></input>
+        <input
+          className='form-item-input'
+          type='email'
+          id='email'
+          placeholder='name@mail.com'
+          {...register('email', { required: 'email is required' })}
+        ></input>
       </div>
       <div className='get-informed-button'>
         <button type='submit'>Get informed</button>

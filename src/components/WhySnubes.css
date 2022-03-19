@@ -1,14 +1,14 @@
 .why-snubes {
   background: url('../assets/background-2.jpg');
+  background-position: 85%;
   background-size: cover;
   margin: 0.625rem auto;
-  padding: 3.75rem;
   color: var(--text-color-dark);
   text-align: start;
 }
 
 .why-snubes .container-content {
-  max-width: 41.25rem;
+  padding: 3.75rem 16.875rem;
 }
 
 .why-snubes h3 {
