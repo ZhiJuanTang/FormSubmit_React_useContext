@@ -2,10 +2,14 @@
   background-color: white;
   margin-bottom: 1.25rem;
   color: var(--text-color-dark);
+}
+
+#partners .container-content {
   padding: 3.75rem 0;
 }
 
 .quote {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,10 +23,22 @@
 }
 
 .quote blockquote {
-  width: 41.25rem;
+  max-width: 41.25rem;
   font-size: 1.125rem;
   font-style: italic;
   line-height: 1.56;
+  text-align: justify;
+}
+
+.quote-company-logo {
+  filter: invert(100%) grayscale(100%) contrast(200%);
+  margin-bottom: 2.188rem;
+}
+
+.quote-company-logo,
+.partners-logo img {
+  height: 2.25rem;
+  width: auto;
 }
 
 .author {
@@ -32,14 +48,31 @@
   margin: 1.875rem auto;
 }
 
+.pagination {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination-item {
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: var(--pigination-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pagination-item:active,
+.pagination-item:hover {
+  background-color: var(--placeholder-color);
+}
+
 .partners-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.75rem;
-}
-
-.partners-logo img {
-  height: 2.25rem;
-  width: auto;
+  flex-wrap: wrap;
+  margin: 3.75rem auto 0 auto;
+  gap: 0.7rem;
 }

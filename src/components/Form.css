@@ -4,9 +4,9 @@
   align-items: center;
   gap: 0.938rem;
   font-size: 1.125rem;
-  max-width: 28.25rem;
+  max-width: 28.5rem;
   margin-left: 0.812rem;
-  /* padding-right: 4.125rem; */
+  margin-top: 1.25rem;
 }
 
 .form-item,
@@ -24,8 +24,19 @@
   padding-right: 0.938rem;
 }
 
-.form input,
-.react-input select {
+.form-item-input,
+.react-input,
+.form-error,
+.react-input-error {
+  width: 22.5rem;
+}
+
+.form-item-input,
+.react-input select,
+.react-input input,
+.form-error,
+.react-input-error input,
+.react-input-error select {
   font-size: 1.125rem;
   font-family: inherit;
   color: inherit;
@@ -35,14 +46,17 @@
   padding: 0.625rem;
 }
 
-.form input:focus,
-.react-input select:focus {
+.form-item-input:focus,
+.react-input select:focus,
+.react-input input:focus {
   outline-color: var(--button-color-primary);
 }
 
-.form-item-input,
-.react-input {
-  width: 22.5rem;
+.form-error:focus,
+.react-input-error select:focus,
+.react-input-error input:focus,
+#email:invalid {
+  outline-color: var(--error-color);
 }
 
 .phone-input-group {
@@ -65,6 +79,7 @@
 }
 
 .PhoneInput select {
+  background-color: white;
   position: absolute;
   width: 100%;
   margin-left: 0;
@@ -103,4 +118,8 @@
   width: 17.5rem;
   height: 3rem;
   border-radius: 4px;
+}
+
+.get-informed-button button:hover {
+  background-color: var(--button-color-secondary);
 }

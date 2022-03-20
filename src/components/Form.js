@@ -42,6 +42,7 @@ const Form = () => {
         <label htmlFor='company'>Company</label>
         <input
           className='form-item-input'
+          className={errors.company ? 'form-error' : 'form-item-input'}
           type='text'
           id='company'
           placeholder='Company'
@@ -55,7 +56,7 @@ const Form = () => {
       <div className='form-item'>
         <label htmlFor='name'>Name</label>
         <input
-          className='form-item-input'
+          className={errors.name ? 'form-error' : 'form-item-input'}
           type='text'
           id='name'
           placeholder='Full name'
@@ -64,10 +65,11 @@ const Form = () => {
       </div>
       <div className='form-item-react-input'>
         <label htmlFor='phone'>Phone</label>
-        <div className='react-input'>
+        <div className={errors.phone ? 'react-input-error' : 'react-input'}>
           <Controller
             name='phone'
             control={control}
+            rules={{ required: true }}
             render={({ field }) => <PhoneInput defaultCountry={defaultCountry} international {...field} />}
           />
         </div>
@@ -75,7 +77,7 @@ const Form = () => {
       <div className='form-item'>
         <label htmlFor='email'>E-mail</label>
         <input
-          className='form-item-input'
+          className={errors.email ? 'form-error' : 'form-item-input'}
           type='email'
           id='email'
           placeholder='name@mail.com'
