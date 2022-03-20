@@ -1,5 +1,6 @@
 .header {
-  padding: 1.063rem 0;
+  padding-top: 1.063rem;
+  padding-bottom: 1.063rem;
   background-color: white;
 }
 
@@ -8,11 +9,19 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 92.5%;
+  max-width: 69.374rem;
 }
 
-.logo {
+.header .logo {
+  display: var(--nav-logo-display);
   width: 10.125rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.header .logo-m {
+  display: var(--nav-logo-m-display);
+  width: 6.438rem;
   height: auto;
   object-fit: contain;
 }
@@ -25,7 +34,6 @@ nav {
   display: var(--nav-container-l-display);
   gap: 2em;
   justify-content: space-between;
-  margin: 0 0 0 auto;
 }
 
 .container-nav-m {
@@ -35,7 +43,6 @@ nav {
   width: 1.75rem;
   height: 1.313rem;
   text-align: end;
-  margin: 0 0 0 auto;
 }
 
 .toggle {
@@ -49,6 +56,7 @@ nav {
   color: inherit;
   border: none;
   cursor: pointer;
+  background-color: white;
 }
 
 .nav-select:hover {

@@ -1,7 +1,10 @@
 .about-form {
   padding: 1.563rem 2.188rem;
+  max-width: 38.626rem;
+  margin: 0 auto;
 }
 
 .about-form p {
+  display: var(--about-form-p-display);
   margin: 0.625rem 0 1.562rem 0;
 }

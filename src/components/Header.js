@@ -1,4 +1,5 @@
 import logo from '../assets/snubes-logo.png';
+import logoM from '../assets/snubes-logo-m.png';
 import './Header.css';
 
 const Header = () => {
@@ -7,6 +8,7 @@ const Header = () => {
       <div className='container-content'>
         <div className='container-header'>
           <img src={logo} className='logo' alt='Snubes logo' />
+          <img src={logoM} className='logo-m' alt='Snubes logo' />
           <nav>
             <div className='container-nav-m'>
               <div className='toggle'></div>

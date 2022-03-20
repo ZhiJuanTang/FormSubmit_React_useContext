@@ -11,20 +11,24 @@ const Partners = () => {
   return (
     <section id='partners'>
       <div className='container-content'>
-        <img />
+        <img src={talixo} className='quote-company-logo' />
         <div className='quote'>
-          <img src={backward} className='nav-key' alt='backward key' />
+          <img src={backward} className='nav-key' alt='backward key' id='backward' />
           <blockquote>
             Finding a suitable outsourcing service provider through Snubes was very easy and our personal consultant helped us every step of the way.
             After a short time we had good offers on the table. An on-site visit confirmed the positive impression and we have now found a matching
             partner. Thank you for your great support, which has helped us a lot in the selection process.
           </blockquote>
-          <img src={forward} className='nav-key' alt='forward key' />
+          <img src={forward} className='nav-key' alt='forward key' id='forward' />
         </div>
         <address className='author'>
           <b>Jan Brenneke,</b> VP Operations
         </address>
-        <div className='pagination'></div>
+        <div className='pagination'>
+          <div className='pagination-item'></div>
+          <div className='pagination-item'></div>
+          <div className='pagination-item'></div>
+        </div>
         <div className='partners-logo'>
           <img src={allianz} alt='Allianz sign' />
           <img src={creditshelf} alt='Creditshelf sign' />

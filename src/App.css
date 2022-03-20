@@ -1,14 +1,21 @@
+/* gerneral setting */
+
 :root {
   --text-color-dark: #445566;
   --text-color-light: #7f7f7f;
   --background-color-light: #f9f9f9;
   --background-color-dark: #4a4a4a;
   --placeholder-color: #aabbcc;
+  --pigination-color: #e5e9ee;
   --button-color-primary: #0099ee;
+  --button-color-secondary: rgb(16, 74, 231);
+  --error-color: #ee5566;
   --nav-container-l-display: flex;
   --nav-container-m-display: none;
+  --nav-logo-display: normal;
+  --nav-logo-m-display: none;
+  --about-form-p-display: normal;
   --text-align-figure-h3: start;
-  --inner-margin: 0 auto;
 }
 
 * {
@@ -23,6 +30,7 @@
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background: var(--background-color-light);
+  word-break: break-word;
 }
 
 a {
@@ -60,71 +68,85 @@ h3 {
   line-height: 1.56;
 }
 
+section,
+header,
+footer {
+  padding: 0 0.938rem;
+}
+
 .container-content {
   max-width: 1200px;
-  margin: var(--inner-margin);
+  margin: 0 auto;
 }
 
 /* media query */
+
 @media only screen and (max-width: 1000px) {
   :root {
     --nav-container-l-display: none;
     --nav-container-m-display: flex;
+    --nav-logo-display: none;
+    --nav-logo-m-display: normal;
+  }
+
+  .figure h3 {
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  :root {
-    --inner-margin: 0 0.938rem;
-  }
-
   .header {
-    padding: 0.813rem 0 0.688rem 0;
+    padding-top: 0.813rem;
+    padding-bottom: 0.688rem;
     border-bottom: 1px solid var(--placeholder-color);
-  }
-
-  .header .container-header {
-    width: 100%;
   }
 
   .about {
     background: white;
+    padding: 0;
   }
 
   .about .container-content {
     padding: 0;
-    margin: 0;
     gap: 0;
+    margin: 0 auto;
   }
 
   .about-form-container {
     width: 100%;
-    margin-left: 0;
     border-bottom: 0.625rem solid var(--background-color-light);
+    margin: 0 0.938rem;
   }
 
   .about-form {
-    padding: 1.875rem 6.875rem 2.5rem 7.125rem;
+    padding: 1.875rem 2.438rem 2.5rem 2.188rem;
   }
 
   .figure {
     background: linear-gradient(rgba(68, 85, 102, 0.75), rgba(68, 85, 102, 0.75)), url('./assets/background-1.jpg') no-repeat;
     background-color: rgba(68, 85, 102, 0.75);
     background-size: cover;
+    background-position: 60%;
     width: 100%;
-    padding: 2.813rem 7.25rem 2.875rem 7.25rem;
+    padding: 2.813rem 0.938rem;
   }
 
   .figure h3 {
     text-align: center;
   }
 
+  .display-data {
+    padding: 4.75rem 0;
+  }
+
   #how-it-works .container-content {
-    padding: 1.875rem 0.938rem;
+    padding: 1.875rem 0;
   }
 
   .why-snubes .container-content {
-    padding: 2.5rem 15.187rem 1.5rem 0.938rem;
+    padding: 2.5rem 0 1.5rem 0;
+    max-width: 30rem;
+    margin: 0 1.875rem;
   }
 
   .partners .container-content {
@@ -142,9 +164,10 @@ h3 {
 }
 
 @media only screen and (max-width: 686px) {
-  /* .form {
-    align-items: center;
-  } */
+  .form {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .form label,
   .form-item-input,
@@ -155,5 +178,115 @@ h3 {
 
   .get-informed-button {
     margin-left: 0;
+  }
+
+  .form-item-input,
+  .react-input {
+    width: 100%;
+  }
+
+  #partners {
+    margin-bottom: 0.625rem;
+  }
+
+  .partners-logo {
+    justify-content: center;
+  }
+
+  .container-footer {
+    display: initial;
+  }
+
+  .reward {
+    display: none;
+  }
+
+  .footer .container-content {
+    padding: 2.818rem 0rem 2.875rem 0;
+  }
+
+  .footer-item li {
+    margin: 0.938rem auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-form {
+    padding: 0.938rem 0 1.25rem 0;
+  }
+
+  .about-form p {
+    display: none;
+  }
+
+  .form {
+    margin: 0 auto;
+  }
+
+  .about-form-title {
+    text-align: start;
+  }
+
+  .figure {
+    padding: 1.875rem 0.938rem;
+  }
+
+  .display-data-body-container {
+    justify-content: start;
+  }
+
+  #how-it-works {
+    text-align: start;
+  }
+
+  #how-it-works .container-content {
+    display: block;
+  }
+
+  .how-it-works-item {
+    display: grid;
+    grid-template-columns: 20% 77%;
+    gap: 3%;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .how-it-works-item-text h3 {
+    padding: 0.9rem 0;
+  }
+
+  .why-snubes {
+    background: white;
+  }
+
+  #partners .container-content {
+    padding: 1.875rem 0;
+  }
+
+  .partners-logo {
+    max-width: 17rem;
+    gap: 2.3rem;
+  }
+
+  .nav-key {
+    position: absolute;
+    bottom: -6.5rem;
+  }
+
+  #forward {
+    right: 0;
+  }
+
+  .quote-company-logo {
+    margin-bottom: 1.875rem;
+  }
+
+  .author {
+    margin: 1.25rem auto 1.875rem auto;
+  }
+
+  .partners-logo {
+    margin-top: 2.5rem;
   }
 }
