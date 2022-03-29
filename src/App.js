@@ -12,15 +12,17 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
-      <FormState>
-        <Header />
-        <About />
-        <HowItWorks />
+      <Header />
+      
+      <FormState>        
+        <About />        
+      </FormState>  
+
+      <HowItWorks />
         <WhySnubes />
         <Partners />
         <Footer />
         <Copywrite />
-      </FormState>
     </div>
   );
 }
